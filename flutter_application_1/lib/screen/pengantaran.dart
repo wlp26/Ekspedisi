@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'pengantaran.dart';
 
-class DetailPengantaranScreen extends StatefulWidget {
-  const DetailPengantaranScreen({Key? key}) : super(key: key);
+class PengantaranStartScreenScreen extends StatefulWidget {
+  const PengantaranStartScreenScreen({Key? key}) : super(key: key);
 
   @override
-  _DetailPengantaranScreenState createState() =>
-      _DetailPengantaranScreenState();
+  _PengantaranStartScreenScreenState createState() =>
+      _PengantaranStartScreenScreenState();
 }
 
-class _DetailPengantaranScreenState extends State<DetailPengantaranScreen> {
+class _PengantaranStartScreenScreenState
+    extends State<PengantaranStartScreenScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,7 +21,7 @@ class _DetailPengantaranScreenState extends State<DetailPengantaranScreen> {
             },
           ),
           title: const Center(
-            child: Text('Pengantaran'),
+            child: Text('PengantaranStartScreen'),
           ),
         ),
         body: Padding(
@@ -107,26 +107,17 @@ class _DetailPengantaranScreenState extends State<DetailPengantaranScreen> {
                       ),
                       subtitle: Text('Tanggal'),
                     ),
+                    ListTile(
+                      title: Text(
+                        'Tanggal Sampai',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      subtitle: Text('Tanggal'),
+                    ),
                   ],
                 ),
-              ),
-              const SizedBox(height: 16.0),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) =>
-                            const PengantaranStartScreenScreen()),
-                  );
-                },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.black,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10.0),
-                  ),
-                ),
-                child: const Text('Start'),
               ),
             ],
           ),

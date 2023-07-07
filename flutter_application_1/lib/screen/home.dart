@@ -74,11 +74,11 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          icon: Icon(Icons.account_circle),
+          icon: const Icon(Icons.account_circle),
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => ProfileScreen()),
+              MaterialPageRoute(builder: (context) => const ProfileScreen()),
             );
           },
         ),
@@ -97,7 +97,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               Text(
                 isSwitched ? 'On' : 'Off',
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
@@ -112,8 +112,8 @@ class _HomeScreenState extends State<HomeScreen> {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Padding(
-                padding: const EdgeInsets.all(8.0),
+              const Padding(
+                padding: EdgeInsets.all(8.0),
                 child: Center(
                   child: Text(
                     'List Pengantaran',
@@ -127,11 +127,11 @@ class _HomeScreenState extends State<HomeScreen> {
               Card(
                 color: Colors.grey[200], // Set the desired shade of grey
                 child: ListTile(
-                  leading: CircleAvatar(
+                  leading: const CircleAvatar(
                     child: Icon(Icons.image), // Replace with your thumbnail
                   ),
-                  title: Text('Order Number'),
-                  subtitle: Column(
+                  title: const Text('Order Number'),
+                  subtitle: const Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text('Jadwal Pengantaran'),
@@ -139,12 +139,12 @@ class _HomeScreenState extends State<HomeScreen> {
                     ],
                   ),
                   trailing: IconButton(
-                    icon: Icon(Icons.arrow_forward),
+                    icon: const Icon(Icons.arrow_forward),
                     onPressed: () {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => DetailPengantaranScreen()),
+                            builder: (context) => const DetailPengantaranScreen()),
                       );
                     },
                   ),
@@ -153,11 +153,11 @@ class _HomeScreenState extends State<HomeScreen> {
               Card(
                 color: Colors.grey[200], // Set the desired shade of grey
                 child: ListTile(
-                  leading: CircleAvatar(
+                  leading: const CircleAvatar(
                     child: Icon(Icons.image), // Replace with your thumbnail
                   ),
-                  title: Text('Order Number'),
-                  subtitle: Column(
+                  title: const Text('Order Number'),
+                  subtitle: const Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text('Jadwal Pengantaran'),
@@ -165,7 +165,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ],
                   ),
                   trailing: IconButton(
-                    icon: Icon(Icons.arrow_forward),
+                    icon: const Icon(Icons.arrow_forward),
                     onPressed: () {
                       // Add the desired functionality when the button is pressed
                     },
@@ -174,8 +174,8 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ],
           ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
+          const Padding(
+            padding: EdgeInsets.all(8.0),
             child: Center(
               child: Text(
                 'History',
@@ -189,11 +189,11 @@ class _HomeScreenState extends State<HomeScreen> {
           Card(
             color: Colors.grey[200], // Set the desired shade of grey
             child: ListTile(
-              leading: CircleAvatar(
+              leading: const CircleAvatar(
                 child: Icon(Icons.image), // Replace with your thumbnail
               ),
-              title: Text('Order Number'),
-              subtitle: Column(
+              title: const Text('Order Number'),
+              subtitle: const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text('Tanggal Sampai'), // Different subtitle for history
@@ -201,12 +201,12 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
               trailing: IconButton(
-                icon: Icon(Icons.arrow_forward),
+                icon: const Icon(Icons.arrow_forward),
                 onPressed: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => DetailHistoryScreen()),
+                        builder: (context) => const DetailHistoryScreen()),
                   );
                 },
               ),
@@ -215,11 +215,11 @@ class _HomeScreenState extends State<HomeScreen> {
           Card(
             color: Colors.grey[200], // Set the desired shade of grey
             child: ListTile(
-              leading: CircleAvatar(
+              leading: const CircleAvatar(
                 child: Icon(Icons.image), // Replace with your thumbnail
               ),
-              title: Text('Order Number'),
-              subtitle: Column(
+              title: const Text('Order Number'),
+              subtitle: const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text('Tanggal Sampai'), // Different subtitle for history
@@ -227,7 +227,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
               trailing: IconButton(
-                icon: Icon(Icons.arrow_forward),
+                icon: const Icon(Icons.arrow_forward),
                 onPressed: () {
                   // Add the desired functionality when the button is pressed
                 },
@@ -240,10 +240,10 @@ class _HomeScreenState extends State<HomeScreen> {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => HistoryScreen()),
+                  MaterialPageRoute(builder: (context) => const HistoryScreen()),
                 );
               },
-              child: Text(
+              child: const Text(
                 'View More',
                 style: TextStyle(
                   color: Colors.grey,
