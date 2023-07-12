@@ -7,6 +7,8 @@ environment:
   sdk: '>=3.0.5 <4.0.0'
 
 dependencies:
+  google_maps_flutter: ^2.1.1
+  geolocator: ^8.0.0
   flutter:
     sdk: flutter
 
